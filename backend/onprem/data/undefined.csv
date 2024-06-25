@@ -1,0 +1,7 @@
+"UnitCode","UnitDisply","UnitName","VolDisply","SizeInMM","Locked","DataSource","UserSign"
+1,"mm","Millimeter","cmm","1.000000","Y","N",1
+2,"cm","Centimeter","cc","10.000000","Y","N",1
+3,"dm","Decimeter","cdm","100.000000","Y","N",1
+4,"m","Meter","cm","1000.000000","Y","N",1
+5,"""","Inch","ci","25.400000","Y","N",1
+6,"'","Foot","cf","304.800000","Y","N",1

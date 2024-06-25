@@ -1,0 +1,542 @@
+"NAVIGATION_MD"
+"<?xml version=""1.0"" encoding=""UTF-8"" standalone=""yes""?>
+<graph xmlns:xsi=""http://www.w3.org/2001/XMLSchema-instance"">
+	<nodes>
+		<node object=""All/Service/@ES_ACTIVITY"" id=""ActivityNode"">
+			<interfaces>
+				<interface id=""0"" table=""OCLG"" column=""CardCode"" />
+				<interface id=""1"" table=""OCLG"" column=""CntctCode"" />
+			</interfaces>
+		</node>
+		<node object=""All/Service/@ES_KNOWLEDGE_BASE"" id=""KnowledgeBaseNode"">
+			<interfaces>
+				<interface id=""0"" table=""OSLT"" column=""ItemCode"" />
+			</interfaces>
+		</node>
+		<node object=""All/Inventory/@ES_INVENTORYGOODSISSUE"" id=""InventoryGoodsIssueNode"">
+			<interfaces>
+				<interface id=""0"" table=""IGE1"" column=""ItemCode"" />
+			</interfaces>
+		</node> 
+		<node object=""All/Inventory/@ES_INVENTORYGOODSRECEIPT"" id=""InventoryGoodsReceiptNode"">
+			<interfaces>
+				<interface id=""0"" table=""IGN1"" column=""ItemCode"" />
+			</interfaces>
+		</node> 
+		<node object=""All/Master Data/@ES_ITEM"" id=""ItemNode"">
+			<interfaces>
+				<interface id=""0"" table=""OITM"" column=""ItemCode"" />
+			</interfaces>
+		</node>
+		<node object=""All/AR/@ES_SALESORDER"" id=""SalesOrderNode"">
+			<interfaces>
+				<interface id=""0"" table=""ORDR"" column=""CardCode"" />
+				<interface id=""1"" table=""RDR1"" column=""ItemCode"" />
+				<interface id=""2"" table=""ORDR"" column=""CntctCode"" />
+				<interface id=""3"" table=""ORDR"" column=""DocEntry"" />
+			</interfaces>
+		</node>
+		<node object=""All/AP/@ES_PURCHASE_ORDER"" id=""PurchaseOrderNode"">
+			<interfaces>
+				<interface id=""0"" table=""OPOR"" column=""CardCode"" />
+				<interface id=""1"" table=""POR1"" column=""ItemCode"" />
+				<interface id=""2"" table=""OPOR"" column=""CntctCode"" />
+			</interfaces>
+		</node>
+		<node object=""All/Master Data/@ES_BP"" id=""BusinessPartnerNode"">
+			<interfaces>
+				<interface id=""0"" table=""OCRD"" column=""CardCode"" />
+			</interfaces>
+		</node>
+		<node object=""All/Master Data/@ES_CONTACT"" id=""ContactNode"">
+			<interfaces>
+				<interface id=""0"" table=""OCPR"" column=""CntctCode"" />
+				<interface id=""1"" table=""OCPR"" column=""CardCode"" />
+			</interfaces>
+		</node>
+		<node object=""All/Sales Opportunity/@ES_OPPORTUNITY"" id=""OpportunityNode"">
+			<interfaces>
+				<interface id=""0"" table=""OOPR"" column=""CardCode"" />
+				<interface id=""1"" table=""OCPR"" column=""CntctCode"" />
+			</interfaces>
+		</node>
+		<node object=""All/Production/@ES_ISSUEFORPRODUCTION"" id=""IssueForProductionNode"">
+			<interfaces>
+				<interface id=""0"" table=""IGE1"" column=""BaseEntry"" />
+			</interfaces>
+		</node>
+		<node object=""All/Production/@ES_BOM"" id=""BOMNode"">
+			<interfaces>
+				<interface id=""0"" table=""OITT"" column=""Code"" />
+				<interface id=""1"" table=""ITT1"" column=""Code"" />
+			</interfaces>
+		</node>
+		<node object=""All/AP/@ES_AP_INVOICE"" id=""APInvoiceNode"">
+			<interfaces>
+				<interface id=""0"" table=""OPCH"" column=""CardCode"" />
+				<interface id=""1"" table=""PCH1"" column=""ItemCode"" />
+				<interface id=""2"" table=""OPCH"" column=""CntctCode"" />
+			</interfaces>
+		</node>
+		<node object=""All/AR/@ES_SALESARINVOICE"" id=""SalesARInvoiceNode"">
+			<interfaces>
+				<interface id=""0"" table=""OINV"" column=""CardCode"" />
+				<interface id=""1"" table=""INV1"" column=""ItemCode"" />
+				<interface id=""2"" table=""OINV"" column=""CntctCode"" />
+				<interface id=""3"" table=""INV1"" column=""BaseEntry"" />
+			</interfaces>
+		</node>
+		<node object=""All/AP/@ES_AP_CREDIT_MEMO"" id=""APCreditMemoNode"">
+			<interfaces>
+				<interface id=""0"" table=""ORPC"" column=""CardCode"" />
+				<interface id=""1"" table=""RPC1"" column=""ItemCode"" />
+				<interface id=""2"" table=""ORPC"" column=""CntctCode"" />
+			</interfaces>
+		</node>
+		<node object=""All/AR/@ES_AR_CREDIT_MEMO"" id=""ARCreditMemoNode"">
+			<interfaces>
+				<interface id=""0"" table=""ORIN"" column=""CardCode"" />
+				<interface id=""1"" table=""RIN1"" column=""ItemCode"" />
+				<interface id=""2"" table=""ORIN"" column=""CntctCode"" />
+			</interfaces>
+		</node>
+		<node object=""All/AP/@ES_APRESERVEINVOICE"" id=""APReserveInvoiceNode"">
+			<interfaces>
+				<interface id=""0"" table=""OPCH"" column=""CardCode"" />
+				<interface id=""1"" table=""OCPR"" column=""CntctCode"" />
+				<interface id=""2"" table=""PCH1"" column=""ItemCode"" />
+			</interfaces>
+		</node>
+		<node object=""All/AP/@ES_GOODSRECEIPTPO"" id=""GoodsReceiptPONode"">
+			<interfaces>
+				<interface id=""0"" table=""OPDN"" column=""CardCode"" />
+				<interface id=""1"" table=""OPDN"" column=""CntctCode"" />
+				<interface id=""2"" table=""PDN1"" column=""ItemCode"" />
+			</interfaces>
+		</node>
+		<node object=""All/AP/@ES_GOODSRETURN"" id=""GoodsReturnNode"">
+			<interfaces>
+				<interface id=""0"" table=""ORPD"" column=""CardCode"" />
+				<interface id=""1"" table=""ORPD"" column=""CntctCode"" />
+				<interface id=""2"" table=""RPD1"" column=""ItemCode"" />
+			</interfaces>
+		</node>
+		<node object=""All/Inventory/@ES_INVENTORYTRANSFER"" id=""InventoryTransferNode"">
+			<interfaces>
+				<interface id=""0"" table=""OWTR"" column=""CardCode"" />
+				<interface id=""1"" table=""OWTR"" column=""CntctCode"" />
+				<interface id=""2"" table=""WTR1"" column=""ItemCode"" />
+			</interfaces>
+		</node>
+		<node object=""All/Production/@ES_RECEIPTFROMPRODUCTION"" id=""ReceiptFromProductionNode"">
+			<interfaces>
+				<interface id=""0"" table=""IGN1"" column=""BaseEntry"" />
+			</interfaces>
+		</node>
+		<node object=""All/Production/@ES_PRODUCTIONORDER"" id=""ProductionOrderNode"">
+			<interfaces>
+				<interface id=""0"" table=""OWOR"" column=""CardCode"" />
+				<interface id=""1"" table=""OWOR"" column=""ItemCode"" />
+				<interface id=""2"" table=""WOR1"" column=""ItemCode"" />
+				<interface id=""3"" table=""OWOR"" column=""DocEntry"" />
+			</interfaces>
+		</node>
+		<node object=""All/AP/@ES_PURCHASEQUOTATION"" id=""PurchaseQuotationNode"">
+			<interfaces>
+				<interface id=""0"" table=""OPQT"" column=""CardCode"" />
+				<interface id=""1"" table=""OPQT"" column=""CntctCode"" />
+				<interface id=""2"" table=""PQT1"" column=""ItemCode"" />
+			</interfaces>
+		</node>
+		<node object=""All/AR/@ES_SALES_D_P_I"" id=""SalesARDownPaymentInvoiceNode"">
+			<interfaces>
+				<interface id=""0"" table=""ODPI"" column=""CardCode"" />
+				<interface id=""1"" table=""ODPI"" column=""CntctCode"" />
+				<interface id=""2"" table=""DPI1"" column=""ItemCode"" />
+			</interfaces>
+		</node>
+		<node object=""All/AR/@ES_SALES_D_P_R"" id=""SalesARDownPaymentRequestNode"">
+			<interfaces>
+				<interface id=""0"" table=""ODPI"" column=""CardCode"" />
+				<interface id=""1"" table=""ODPI"" column=""CntctCode"" />
+				<interface id=""2"" table=""DPI1"" column=""ItemCode"" />
+			</interfaces>
+		</node>
+		<node object=""All/AR/@ES_SALESAR_R_I"" id=""SalesARReserveInvoiceNode"">
+			<interfaces>
+				<interface id=""0"" table=""OINV"" column=""CardCode"" />
+				<interface id=""1"" table=""OINV"" column=""CntctCode"" />
+				<interface id=""2"" table=""INV1"" column=""ItemCode"" />
+			</interfaces>
+		</node>
+		<node object=""All/AR/@ES_SALESDELIVERY"" id=""SalesDeliveryNode"">
+			<interfaces>
+				<interface id=""0"" table=""ODLN"" column=""CardCode"" />
+				<interface id=""1"" table=""ODLN"" column=""CntctCode"" />
+				<interface id=""2"" table=""DLN1"" column=""ItemCode"" />
+				<interface id=""3"" table=""DLN1"" column=""BaseEntry"" />
+				<interface id=""4"" table=""ODLN"" column=""DocEntry"" />
+			</interfaces>
+		</node>
+		<node object=""All/AR/@ES_SALESQUOTATION"" id=""SalesQuotationNode"">
+			<interfaces>
+				<interface id=""0"" table=""OQUT"" column=""CardCode"" />
+				<interface id=""1"" table=""OQUT"" column=""CntctCode"" />
+				<interface id=""2"" table=""QUT1"" column=""ItemCode"" />
+				<interface id=""3"" table=""OQUT"" column=""DocEntry"" />
+				<interface id=""4"" table=""QUT1"" column=""BaseEntry"" />
+			</interfaces>
+		</node>
+		<node object=""All/AR/@ES_SALESRETURNS"" id=""SalesReturnsNode"">
+			<interfaces>
+				<interface id=""0"" table=""ORDN"" column=""CardCode"" />
+				<interface id=""1"" table=""ORDN"" column=""CntctCode"" />
+				<interface id=""2"" table=""RDN1"" column=""ItemCode"" />
+			</interfaces>
+		</node>
+		<node object=""All/Service/@ES_SERVICECALL"" id=""ServiceCallNode"">
+			<interfaces>
+				<interface id=""0"" table=""OSCL"" column=""itemCode"" />
+				<interface id=""1"" table=""OSCL"" column=""contctCode"" />
+				<interface id=""2"" table=""OSCL"" column=""customer"" />
+			</interfaces>
+		</node>
+		<node object=""All/Banking/@ES_IP"" id=""IncomingPaymentNode"">
+			<interfaces>
+				<interface id=""0"" table=""ORCT"" column=""CardCode"" />
+				<interface id=""1"" table=""ORCT"" column=""CntctCode"" />
+			</interfaces>
+		</node>
+		<node object=""All/Banking/@ES_OP"" id=""OutgoingPaymentNode"">
+			<interfaces>
+				<interface id=""0"" table=""OVPM"" column=""CardCode"" />
+				<interface id=""1"" table=""OVPM"" column=""CntctCode"" />
+			</interfaces>
+		</node>
+	</nodes>
+	<connectors>
+		<connector>
+			<from node=""ItemNode"" interface=""0"" />
+			<to node=""InventoryGoodsIssueNode"" interface=""0"" />
+		</connector>
+		<connector>
+			<from node=""ItemNode"" interface=""0"" />
+			<to node=""InventoryGoodsReceiptNode"" interface=""0"" />
+		</connector>
+		<connector>
+			<from node=""ItemNode"" interface=""0"" />
+			<to node=""ServiceCallNode"" interface=""0"" />
+		</connector>
+		<connector>
+			<from node=""ItemNode"" interface=""0"" />
+			<to node=""SalesOrderNode"" interface=""1"" />
+		</connector>
+		<connector>
+			<from node=""ItemNode"" interface=""0"" />
+			<to node=""PurchaseOrderNode"" interface=""1"" />
+		</connector>
+		<connector>
+			<from node=""ItemNode"" interface=""0"" />
+			<to node=""APCreditMemoNode"" interface=""1"" />
+		</connector>
+		<connector>
+			<from node=""ProductionOrderNode"" interface=""3"" />
+			<to node=""ReceiptFromProductionNode"" interface=""0"">
+				<filter table=""IGN1"" column=""BaseType"" compared=""202""/> 
+			</to>
+		</connector>
+		<connector>
+			<from node=""ProductionOrderNode"" interface=""3"" />
+			<to node=""IssueForProductionNode"" interface=""0"">
+				<filter table=""IGE1"" column=""BaseType"" compared=""202""/> 
+			</to>
+		</connector>
+		<connector>
+			<from node=""ItemNode"" interface=""0"" />
+			<to node=""ARCreditMemoNode"" interface=""1"" />
+		</connector>
+		<connector>
+			<from node=""ItemNode"" interface=""0"" />
+			<to node=""APInvoiceNode"" interface=""1"" />
+		</connector>
+		<connector>
+			<from node=""ItemNode"" interface=""0"" />
+			<to node=""ProductionOrderNode"" interface=""2"" />
+		</connector>
+		<connector>
+			<from node=""ItemNode"" interface=""0"" />
+			<to node=""BOMNode"" interface=""1"" />
+		</connector>
+		<connector>
+			<from node=""ItemNode"" interface=""0"" />
+			<to node=""PurchaseQuotationNode"" interface=""2"" />
+		</connector>
+		<connector>
+			<from node=""ItemNode"" interface=""0"" />
+			<to node=""SalesARDownPaymentInvoiceNode"" interface=""2"" />
+		</connector>
+		<connector>
+			<from node=""ItemNode"" interface=""0"" />
+			<to node=""SalesARDownPaymentRequestNode"" interface=""2"" />
+		</connector>
+		<connector>
+			<from node=""ItemNode"" interface=""0"" />
+			<to node=""SalesARInvoiceNode"" interface=""1"" />
+		</connector>
+		<connector>
+			<from node=""ItemNode"" interface=""0"" />
+			<to node=""SalesARReserveInvoiceNode"" interface=""2"" />
+		</connector>
+		<connector>
+			<from node=""ItemNode"" interface=""0"" />
+			<to node=""SalesQuotationNode"" interface=""2"" />
+		</connector>
+		<connector>
+			<from node=""ItemNode"" interface=""0"" />
+			<to node=""SalesReturnsNode"" interface=""2"" />
+		</connector>
+		<connector>
+			<from node=""ItemNode"" interface=""0"" />
+			<to node=""KnowledgeBaseNode"" interface=""0"" />
+		</connector>
+		<connector>
+			<from node=""ItemNode"" interface=""0"" />
+			<to node=""APReserveInvoiceNode"" interface=""2"" />
+		</connector>
+		<connector>
+			<from node=""ItemNode"" interface=""0"" />
+			<to node=""GoodsReceiptPONode"" interface=""2"" />
+		</connector>
+		<connector>
+			<from node=""ItemNode"" interface=""0"" />
+			<to node=""GoodsReturnNode"" interface=""2"" />
+		</connector>
+		<connector>
+			<from node=""ItemNode"" interface=""0"" />
+			<to node=""InventoryTransferNode"" interface=""2"" />
+		</connector>
+		<connector>
+			<from node=""BOMNode"" interface=""0"" />
+			<to node=""ProductionOrderNode"" interface=""1"" />
+		</connector>
+		<connector>
+			<from node=""ItemNode"" interface=""0"" />
+			<to node=""SalesDeliveryNode"" interface=""2"" />
+		</connector>
+		<connector>
+			<from node=""OpportunityNode"" interface=""0"" />
+			<to node=""BusinessPartnerNode"" interface=""0"" />
+		</connector>
+		<connector>
+			<from node=""SalesOrderNode"" interface=""0"" />
+			<to node=""BusinessPartnerNode"" interface=""0"" />
+		</connector>
+		<connector>
+			<from node=""PurchaseOrderNode"" interface=""0"" />
+			<to node=""BusinessPartnerNode"" interface=""0"" />
+		</connector>
+		<connector>
+			<from node=""APInvoiceNode"" interface=""0"" />
+			<to node=""BusinessPartnerNode"" interface=""0"" />
+		</connector>
+		<connector>
+			<from node=""SalesARInvoiceNode"" interface=""0"" />
+			<to node=""BusinessPartnerNode"" interface=""0"" />
+		</connector>
+		<connector>
+			<from node=""APCreditMemoNode"" interface=""0"" />
+			<to node=""BusinessPartnerNode"" interface=""0"" />
+		</connector>
+		<connector>
+			<from node=""ARCreditMemoNode"" interface=""0"" />
+			<to node=""BusinessPartnerNode"" interface=""0"" />
+		</connector>
+		<connector>
+			<from node=""APReserveInvoiceNode"" interface=""0"" />
+			<to node=""BusinessPartnerNode"" interface=""0"" />
+		</connector>
+		<connector>
+			<from node=""GoodsReceiptPONode"" interface=""0"" />
+			<to node=""BusinessPartnerNode"" interface=""0"" />
+		</connector>
+		<connector>
+			<from node=""GoodsReturnNode"" interface=""0"" />
+			<to node=""BusinessPartnerNode"" interface=""0"" />
+		</connector>
+		<connector>
+			<from node=""InventoryTransferNode"" interface=""0"" />
+			<to node=""BusinessPartnerNode"" interface=""0"" />
+		</connector>
+		<connector>
+			<from node=""ProductionOrderNode"" interface=""0"" />
+			<to node=""BusinessPartnerNode"" interface=""0"" />
+		</connector>
+		<connector>
+			<from node=""PurchaseQuotationNode"" interface=""0"" />
+			<to node=""BusinessPartnerNode"" interface=""0"" />
+		</connector>
+		<connector>
+			<from node=""SalesARDownPaymentInvoiceNode"" interface=""0"" />
+			<to node=""BusinessPartnerNode"" interface=""0"" />
+		</connector>
+		<connector>
+			<from node=""SalesARDownPaymentRequestNode"" interface=""0"" />
+			<to node=""BusinessPartnerNode"" interface=""0"" />
+		</connector>
+		<connector>
+			<from node=""SalesARReserveInvoiceNode"" interface=""0"" />
+			<to node=""BusinessPartnerNode"" interface=""0"" />
+		</connector>
+		<connector>
+			<from node=""SalesDeliveryNode"" interface=""0"" />
+			<to node=""BusinessPartnerNode"" interface=""0"" />
+		</connector>
+		<connector>
+			<from node=""SalesQuotationNode"" interface=""0"" />
+			<to node=""BusinessPartnerNode"" interface=""0"" />
+		</connector>
+		<connector>
+			<from node=""SalesReturnsNode"" interface=""0"" />
+			<to node=""BusinessPartnerNode"" interface=""0"" />
+		</connector>
+		<connector>
+			<from node=""ServiceCallNode"" interface=""2"" />
+			<to node=""BusinessPartnerNode"" interface=""0"" />
+		</connector>
+		<connector>
+			<from node=""ActivityNode"" interface=""0"" />
+			<to node=""BusinessPartnerNode"" interface=""0"" />
+		</connector>
+		<connector>
+			<from node=""APReserveInvoiceNode"" interface=""1"" />
+			<to node=""ContactNode"" interface=""0"" />
+		</connector>
+		<connector>
+			<from node=""OpportunityNode"" interface=""1"" />
+			<to node=""ContactNode"" interface=""0"" />
+		</connector>
+		<connector>
+			<from node=""PurchaseQuotationNode"" interface=""1"" />
+			<to node=""ContactNode"" interface=""0"" />
+		</connector>
+		<connector>
+			<from node=""ServiceCallNode"" interface=""1"" />
+			<to node=""ContactNode"" interface=""0"" />
+		</connector>
+		<connector>
+			<from node=""APCreditMemoNode"" interface=""2"" />
+			<to node=""ContactNode"" interface=""0"" />
+		</connector>
+		<connector>
+			<from node=""SalesARDownPaymentInvoiceNode"" interface=""1"" />
+			<to node=""ContactNode"" interface=""0"" />
+		</connector>
+		<connector>
+			<from node=""SalesARDownPaymentRequestNode"" interface=""1"" />
+			<to node=""ContactNode"" interface=""0"" />
+		</connector>
+		<connector>
+			<from node=""SalesARReserveInvoiceNode"" interface=""1"" />
+			<to node=""ContactNode"" interface=""0"" />
+		</connector>
+		<connector>
+			<from node=""SalesDeliveryNode"" interface=""1"" />
+			<to node=""ContactNode"" interface=""0"" />
+		</connector>
+		<connector>
+			<from node=""SalesQuotationNode"" interface=""1"" />
+			<to node=""ContactNode"" interface=""0"" />
+		</connector>
+		<connector>
+			<from node=""SalesReturnsNode"" interface=""1"" />
+			<to node=""ContactNode"" interface=""0"" />
+		</connector>
+		<connector>
+			<from node=""GoodsReceiptPONode"" interface=""1"" />
+			<to node=""ContactNode"" interface=""0"" />
+		</connector>
+		<connector>
+		<from node=""GoodsReturnNode"" interface=""1"" />
+			<to node=""ContactNode"" interface=""0"" />
+		</connector>
+		<connector>
+		<from node=""InventoryTransferNode"" interface=""1"" />
+			<to node=""ContactNode"" interface=""0"" />
+		</connector>
+		<connector>
+		<from node=""APInvoiceNode"" interface=""2"" />
+			<to node=""ContactNode"" interface=""0"" />
+		</connector>
+		<connector>
+		<from node=""PurchaseOrderNode"" interface=""2"" />
+			<to node=""ContactNode"" interface=""0"" />
+		</connector>
+		<connector>
+		<from node=""ARCreditMemoNode"" interface=""2"" />
+			<to node=""ContactNode"" interface=""0"" />
+		</connector>
+		<connector>
+		<from node=""SalesARInvoiceNode"" interface=""2"" />
+			<to node=""ContactNode"" interface=""0"" />
+		</connector>
+		<connector>
+		<from node=""SalesOrderNode"" interface=""2"" />
+			<to node=""ContactNode"" interface=""0"" />
+		</connector>
+		<connector>
+		<from node=""BusinessPartnerNode"" interface=""0"" />
+			<to node=""ContactNode"" interface=""1"" />
+		</connector>
+		<connector>
+		<from node=""ActivityNode"" interface=""1"" />
+			<to node=""ContactNode"" interface=""0"" />
+		</connector>
+		<connector>
+			<from node=""SalesOrderNode"" interface=""3"" />
+			<to node=""SalesDeliveryNode"" interface=""3"">
+				<filter table=""DLN1"" column=""BaseType"" compared=""17""/> 
+			</to>
+		</connector>
+		<!--<connector>
+			<from node=""SalesOrderNode"" interface=""3"" />
+			<to node=""SalesQuotationNode"" interface=""4"">
+				<filter table=""QUT1"" column=""BaseType"" compared=""17""/> 
+			</to>
+		</connector>
+		<connector>
+			<from node=""SalesQuotationNode"" interface=""3"" />
+			<to node=""SalesDeliveryNode"" interface=""3"">
+				<filter table=""DLN1"" column=""BaseType"" compared=""23""/> 
+			</to>
+		</connector>
+		--><connector>
+			<from node=""SalesDeliveryNode"" interface=""4"" />
+			<to node=""SalesARInvoiceNode"" interface=""3"">
+				<filter table=""INV1"" column=""BaseType"" compared=""15""/> 
+			</to>
+		</connector>
+		<connector>
+			<from node=""SalesOrderNode"" interface=""3"" />
+			<to node=""SalesARInvoiceNode"" interface=""3"">
+				<filter table=""INV1"" column=""BaseType"" compared=""17""/> 
+			</to>
+		</connector>
+		<connector>
+			<from node=""IncomingPaymentNode"" interface=""0"" />
+			<to node=""BusinessPartnerNode"" interface=""0"" />
+		</connector>
+		<connector>
+			<from node=""IncomingPaymentNode"" interface=""1"" />
+			<to node=""ContactNode"" interface=""0"" />
+		</connector>
+		<connector>
+			<from node=""OutgoingPaymentNode"" interface=""0"" />
+			<to node=""BusinessPartnerNode"" interface=""0"" />
+		</connector>
+		<connector>
+			<from node=""OutgoingPaymentNode"" interface=""1"" />
+			<to node=""ContactNode"" interface=""0"" />
+		</connector>
+	</connectors>
+</graph>
+"

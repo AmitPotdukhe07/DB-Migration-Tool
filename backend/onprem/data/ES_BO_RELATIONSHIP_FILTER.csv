@@ -1,0 +1,6 @@
+"ID","RID","SOURCEFILTER","VIEWCOLUMN","OP","COMPVALUES"
+6,161,"Y","IGE1_BaseType","OPTIONS","[202]"
+7,168,"N","IGN1_BaseType","OPTIONS","[202]"
+8,192,"Y","INV1_BaseType","OPTIONS","[15]"
+9,193,"Y","INV1_BaseType","OPTIONS","[17]"
+10,202,"Y","DLN1_BaseType","OPTIONS","[17]"
